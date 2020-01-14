@@ -27,10 +27,10 @@ public class CutFrame implements ActionListener, ListSelectionListener {
 	String[] metalls = { "Алюминий", "Медь", "Сталь", "Нержавейка" };
 
 	public CutFrame() {
-		JFrame jfrm = new JFrame("Расчет режимов V1.0");
-		jfrm.setLayout(new FlowLayout());
-		jfrm.setBounds(300, 250, 250, 300);
-		jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame javafrm = new JFrame("Расчет режимов V1.0");
+		javafrm.setLayout(new FlowLayout());
+		javafrm.setBounds(300, 250, 250, 300);
+		javafrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		cutSpeed = new JTextField(4);
 		diamCutTool = new JTextField(4);
@@ -62,21 +62,21 @@ public class CutFrame implements ActionListener, ListSelectionListener {
 		butCalc.addActionListener(this);
 		jlst.addListSelectionListener(this);
 
-		jfrm.add(jlst);
-		jfrm.add(labCutSpeed);
-		jfrm.add(cutSpeed);
-		jfrm.add(labdiamCutTool);
-		jfrm.add(diamCutTool);
-		jfrm.add(labnumbersOfCuts);
-		jfrm.add(numbersOfCuts);
-		jfrm.add(labPodachaNaZub);
-		jfrm.add(podachaNaZub);
+		javafrm.add(jlst);
+		javafrm.add(labCutSpeed);
+		javafrm.add(cutSpeed);
+		javafrm.add(labdiamCutTool);
+		javafrm.add(diamCutTool);
+		javafrm.add(labnumbersOfCuts);
+		javafrm.add(numbersOfCuts);
+		javafrm.add(labPodachaNaZub);
+		javafrm.add(podachaNaZub);
 
-		jfrm.add(butCalc);
-		jfrm.add(labOut01);
-		jfrm.add(labOut02);
+		javafrm.add(butCalc);
+		javafrm.add(labOut01);
+		javafrm.add(labOut02);
 
-		jfrm.setVisible(true);
+		javafrm.setVisible(true);
 	}
 
 	@Override
