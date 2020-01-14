@@ -27,7 +27,6 @@ public class CutFrame implements ActionListener, ListSelectionListener {
 	String[] metalls = { "Алюминий", "Медь", "Сталь", "Нержавейка" };
 
 	public CutFrame() {
-		// new branch
 		JFrame javafrm = new JFrame("Расчет режимов V1.0");
 		javafrm.setLayout(new FlowLayout());
 		javafrm.setBounds(300, 250, 250, 300);
